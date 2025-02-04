@@ -1,0 +1,500 @@
+Functional + Studio Doubts
+3.We will submit these for payroll via the MLT load process." - Done
+4.Free up space of lapop from one drive - Done
+5.ISU uses a different time zone - Done
+6.diable account through ISU API call - Done
+7.Picking multiple file from the studio - Done (Refer Clar VSR_Process_Multiple_File_One_By_One - it has everythig needed to know)
+  7.1 Picking multiple file from SFTP and process all the file one by one
+  7.2 Picking the multiple file from SFTP and sort the files and process top most file
+  7.3 Picking mulyiple file from SFTP and Aggregate the files and process them together  
+8.Cloud log check for CSV and xlsx file - Done
+9.How to generate csv file using normal audit log - Done
+10.keys documentation - Done
+11.learn xml to schema - Done
+12.learn textschema component  - Done
+13.Make all Integration and HCM task list also includes Iready and Impact analysis - Done
+14.JIRA learn - Done
+15.Migrationlearn 
+16 what to mainly check when their is message like no sloit gererated during development. - done
+17.How namespace work in studio and In assembly. - done
+18 build an Integration to take/update the data from greenhouse API into workday.(mostly do greehouse harvest API) / webhooks - done
+19. How to blacklist IP in tenant to login
+20.how many things I can migrate between two tenants like ISU, ISSG, Report.
+21.How to fetch the Xpath for <ws:Field name="Company Code" xdiff:isAdded="true">0612</ws:Field>
+22. Learn about CURL
+23. Inputing Data In workday through JAVA
+24. Inputing data in workday throygh POSTnam
+25. Inputing data In workday through greenhouse webhook
+26. How to take data from External system to workday
+27. How to seperate 
+28.create a report which will give me all the necessary security of the desired report.
+29.How to whitelist WD IP
+30.learn about view user activity task.
+31.why some securities are differenrt in different tenant, we have to give some additional securities to ISU
+32. Difference between Listner service and HTTPout (Look Zimit Integration for Refernce) 
+33. Creating HTTPS to send the outside the system
+34. Creating HTTPS to retrieve the Outside the system/ POSTman (Done)
+35. Call get_workers from postman (Done)
+36. get a single worker from WD In postman
+37. Get data from JIRA 
+38 How to do SSK configuration in studio.
+39.HTTP out work same as Web service call in Write or like web tester here we only additionally got refresh token and access token.  
+40.IDB migration
+41. shortcut to find the web service
+42. find the idea to create custom report report security
+5. Create a Report and see how looping of fields work in security in key 2 tenant
+6. why I am not able to assign newly created ISU to Custom report find out the reason
+7.     <xsl:template match="root/data/payload/application/candidate/phone_numbers/value"  >
+        <xsl:copy>
+            <xsl:value-of select="substring($Special_Number_Value, string-length($Special_Number_Value) - 9)" />
+        </xsl:copy>
+      /xsl:template>   
+	  
+	  I want a dynamic node element from root node.
+9. Excel Similar columns data filteration
+10. Text constant having all the employee ID's
+11. Can I sent output file from Report to MFT (No I cant send the output file of the report to the MFT, But there is Integration iN BMO which delivers the my drive file to MFT)
+12. Check 401K
+3. Write 10 new taks HCM/Integrations
+4. GEt tenanted private web service (Check Impact analsysis clar)
+5. Put Tenanted private web service
+6. Sent data from WD to Postman through Studio
+7.get data from dummy API to WD
+8.how to terminate employee and what is difference between termination date last day of the work pay through date
+last day of the work cannot be greater than termination work
+10.Work with payroll web service
+11.How to tranfer employee from One organization to other organization
+12.what is benefir service date
+13.How to call Integration attachment service in studio
+14.Look INT095 E
+15. inetgartion gets passes even if delivery gets failed 
+16.can we delete cal field
+17.How to end long running Integration event - Force failure
+18.How document deliverable actually work in studio and WD
+5.Start workday payroll - oncycle and offcycle concept
+6.Authentication - How to enter in client MFT with SSH key authentication.
+21.create my owun POV
+22.cobra template
+23.does refernce and WD iD changes of a workday delivered field if it gets migrated from one tenant to another tenant.
+24.How to migrate the data in two tenants through IDB.
+25.create payroll Input
+26.what is the difference between all active employees and all actives and terminated employees data source
+27.If the employee is effec in system on 1 Aug and it has been entered in the WD on 6 Aug and if i run CCW on 7 Aug by having a parameter from the 5th Aug will the employee from the 1st Aug comes in the file.
+28. Difference between listner service and HTTP out
+29.solve 3 papers that were given to new joinee
+30. If getting Inbound file as well as DIS file is possible in workday studio
+31.getting 3 files from DIS
+32.Applying XSLT after DIS to validate emp ID from WD with external file
+33.Can EIB send a file to vendor with different name each time
+34.learn how to use java beans instead of splitter (compare java beans with splitter)
+35.Create one Integration to Mapping the data in studio and also apply submit payroll
+36.Applying XSLT after Report data to validate emp ID from WD with external file
+37.configure multiple DIS Inbound DIS in studio
+81.Validate employee coming from external file with Getworker web service (Done)
+82.handle validation for missing fields and check if the How it handle the error 
+83.Mix two report and group by same data from both the files 
+84.How to same report two times in studio
+85.use patch in http 
+86.Create a MVEL to pass on multiple statement everything is true.
+87.Learn vars in studio - refer INT0017 from hartford and also VSR_Check_Vars (vars used to store the file or entire variable into the a single props) - Done
+88.Java beans with splitter
+89.When to use Accumulator  - 1. Suppose Client is sending only employee ID and we have update their contact no. in the system then How will we do it the answe is we will first take Input Ibound file where Employee ID is present then we will check the employee data from WD with report then merge the data and then use accumulataor to merge the similar data and attached the report data to employee - Done
+90.use foreach in Write (Done) 
+91.check if the file is blank - refer  from HINT0014 Hartford check INT0015 to check it with hashset
+92.difference betweeen pageget and soap refere INT0017 from Hartford
+93.How to check if there is file to process - refer INT0017 from hartford
+94.Check if comes multiple fil for process - refer INT0220  
+95.Doubt - convert String to Integer in studio
+Do it in XSLT
+Like below
+                    <Hours>
+                        <!--<xsl:value-of select="ra:Hours"/>-->
+                        <xsl:variable name="integerValue" select="xs:integer(ra:Hours)" />
+                        <xsl:value-of select="$integerValue" />
+                    </Hours>
+96.Can Namsace prefix works in studion if it is not present in input xml does xslt works in this case or if I define the namespace in assembly will it work then.
+97.check page get and how it works and is it really better than soap
+98.Hash map in studio through MVEL - You don't have to learn hash mapping through Eval as it is timetaking process. The better approached will be to use accumulatpor in XSLT and do a mapping (Done)
+99.HashMap in Studio through XSLT
+100.HashMap In studion Through Java Beans
+101.Mapping in XSLT in studio
+102.Sending mail to SFTP
+103.file name in SFTP
+to name the file in SFTP VSRTest*.* if the file name is VSRTest20240908.csv
+104.What is the need for runnig DT with CR than runnnig a EIB - INT0085 DT Finance Employee Data Extract Outbound in hartford to refer
+105.which is fast normal EIB with XSLT or EIB with DT ot DT with Custom report
+106.all the task for edit tenant setup
+107.create backhrounc check Integration
+108. Learn Hash set (Done)
+109.difference between path xtreeam and path.xpath
+props['File.CC.Code']   != empty  -  blank file code
+110.apllying splitter after web service request
+111.Splitter and aggregator namespace
+props['amount.ip'] = parts[0].xpath('detail/col4').toString().replaceAll(',', '')
+props['earn.input'] = parts[0].xstream("detail/col5");
+props['input.end.date'] = parts[0].xpath('detail/col3');
+112.learn how to use vars
+113.How to add Header to the XML
+114.How to map the map in xslt with accumulator
+115.use accumulator at 3,4 places
+116.merge files from copy refer INT0020 from hartford
+117.Split the file through java beans
+118.split the file through XSLT 3.0 postion and something function using
+119.learn Input xpath output xpath namespace namespace URL namespace prefix
+120.learn soapboady, learn rootpart.
+121.How can I add a url or any other value to the xml - sol - simpy use the write and write header and trailer and pass message in between.
+122.create a studio to clean up the system non usable object
+123.build one SSK Integration
+124.Create a iNtgeration where you map the Internal value with external value In Studio
+124.msg to csv conversion
+125 Split the file using Studio , How to count the number of rows coming from splitter and then loop the able
+126.change Image of Alight to Strada from Monthly report
+127.How to take Backup of 100 calculated field in one time
+128.How to check How many files l;
+uiop]
+129.Look into DIS document builder
+130.check submit payment electio
+131.Merge data through file
+132.Learn All ROute component
+133.Prepare Two Payroll Integrations
+134.create Integration with listener service and HTTPS use some API or Postman to do so.
+135.What is the main use of accumulator
+136.Difference between page get and soap. ( done)
+137.API Integration without clar in GEV INT5324
+138.Learn DIS - How can I assign 2 DIS In Studio, What is the difference between data partial and Data dull, How to Filter the DIS, Hot to prompt DIS, Document Builder
+139.Does I need to have impl account to create the task
+140How to open large XML
+141.federated SSO 
+142.Meta Data
+143.Explore Configuration catalog	
+143. If Integration today from yesterday with changes only an there was no employee to be hired on taht day however the follwing employee got hired with its previous day will that employee show up in the Input file and will be send as changes only, same as If the employee is hired In the future.
+144.has anyone implemented Document Retrieval via studio SFTP-Out component with SSH Authentication?
+145.Does Every template sypports DIS 
+146.Use DIS and create oen core connector
+147.Debugging Studio
+148.Difference between All workers an all Active workers and All Active and terminated workers
+149.migration _ Practice it 
+150: We have requirement to pull file that is dated with Yesterday such as 24-10-2024.csv. Seq Gen is not possible
+151.Do we have any option to send the output files from workday to the SharePoint folder via API calls (Instead of workday  --> SFTP-- >SharePoint).
+152.Convert XLSX file to xml in studio
+153.If I have 1 Input file and I want to have 3 Output file which has three different data from the employee demographic and others to will I be using splitter and aggregator continuously. or I can do that In a single way.	(I got the answer and it is like this way first i will tak e data from DIS and then use single splitter and use three different sub routes and process them simulteneously)	
+154.We should assign the BP for the Custom report as it is not best practice recommended by workday check Dart Integration for that
+155.create API Integration Into Workday means what is that
+156.If there are two RAAS into the Studio and If first RAAS is failing with empty record how should we make other also go well		
+157.Find What will happen if the employee is hired yesterday and we want him today's file will he come? or will he exlude from the file what are the measure we should take in this case? should full file help us to solve this?	
+158.How to get the XML path from studio
+159.where to find the cudstom report schedule output
+160.INT0764 GE_CSV_to_Excel_Studio_Outbound				
+161.XSLT group by	
+162.When we should go after EOB, CC and Studio.
+163.Hi Everyone - We have a requirement for one of our clients where we have to deliver the output file of an integration (as simple as a report csv/excel) to Client Sharepoint site. We are trying to find a robust solution for this request.
+Is there a way to achieve this? Any inputs are appreciated, thanks in advance!				
+164.Difference between effective date and current effective date
+165.SFTP In studio refere vernova INT465	
+166.INT0312 has problem that it is not handling the Error properly it if flow is coming and there is web service and one row pass and other row failes alternatively and I want to capture them in single or different audit how will i achieved i, as I cannot use aggregator as flow is alternative and i tried with batch Audit and it doesn't work as expected.	 - Done it will definetly can be solved by Batch Audit refer the INT6034 CVS Inbound Payroll that I have build.
+167.Look as of date - Done I have already entered this information in All calculated field word
+168.Look INT0030 In hartford for using loop for hashset in write instead of passing of each entry - How Hashset help us we dont have to use splitter multiple time suppose i use splitter to store the data from the file then again i have to use this data to get worker from the system we can simply use hash set in this refer VSR_Hashset_and_Foreach
+169.What are the methods to reduce the time for the Studio Integration - Done
+170.Create API Integration In studio in Tenant and Studio / Just see How API Integration works
+171.connect worlday to Azure	
+172.What is settlement run
+173.process mutliple files from ZIP	
+174.If you ever face the problem with blank data then first you should declare the blank data and then use that in service		
+175.Learn Settlement run
+176.Create JWT Integration, convert workday xml data into JSON and send it postman by Studio / use http and also authenticate
+177.create intgeration in studio to get data from the system with refresh token and put that data in some another url or at endpoint
+178.Get Configuration worksheet be it payroll, Time tracking
+179.Learn ValidateXpath component - This component we use to ckeck if there is data present in out xml file or not 
+180.Send Find file Outside with SFTP In Studio
+181.XML learn child and parent relationship like used to define with ./ or ..
+182.Create a BP driven Integration
+183.Get Normal Data from workday and put that It in JIRA
+184.Get data from Workday In 
+185.Updationg SSO in System and How SSO works.
+186.Learn About Repository Document - Done - Whenever we want to put a Input manual document or from repository we use this function in studio refer VSR_Repository_Document
+187.How to capture Inout msg as Variable in workday
+188.show me what does retrieve component does in workday Studio
+189.report Scheduling
+190.How to schedule the report and send it to someone
+Alternative is  ;
+191.I can delete the files in SFTP through studio using SFTP out component
+192.If i receive the XlXS then text to excel - refer INT0092 send by sundaram and it is there in workspace
+193.take JIRA change clar from vishwa
+194.Learn how to stop the flow of the record if it isn't passing the parameter and throw that in error
+195.Question what if we have multiple data getting for the same employee in studio like geographic, personal, education will we use splitter every time for the smae file? - No the answer is we will use splitter once and then later word  
+
+1) load the  CSV tom  Mtables
+
+2) use for  loop to iterate over Mtable rows
+192.How to migrate individual field of custom report- Done - Why I need to migaret the single field while i can migrate whole Report
+193.create cus object and test it also with studio and checking where it is in tenant.
+194.Check out the Integration from BMO whcih takes the file from drive and send it to vendor
+195.Convert UTF 8 File into proper XML take clar from vishwa.
+196.The problem taht I faced during erovironment project where if report is giving multiple record and we want lastest how to take it with EVAL or MVEL just refer to INT0168 Keyabnk for that - Done _ I can do this by using XSLT instead of MVEL
+197.Is it possible to encrypt only a single field instead of whole file? 
+Example - Client wants only Amount field to be encrypted in the Salary file.
+Any suggestions? - yes Make the Integration for this and use encryption component in studio
+198.If you ever faced BP problem after deploying studio that can be mostly due to not assigning ISU to BP run that is main thing to do then check the BP with its environment restriction - Done
+198.If you ever faced BP problem after deploying studio that can be mostly due to not assigning ISU to BP run that is main thing to do then check the BP with its environment restriction - Done
+199.Scenario - when worker enter there time entry it should not go to the manager it should be automatically process- What i can do is that i can attached
+studio in BP of Time entry and then direct us ethat without going for any Auto completion.
+200.Suggest perfectly when to use studio when to use EIB and when to use core connector
+201.How do you change the BP of SUP - We can do that bu going to sup and create and copy the new BP for thet SUP but i yet to find ho to remove the that BP and assign default instead of it as Inactive it doesnt seems working.
+202.create a org and then create time BP then assign that worker to time BP and the run my Integration
+203.Migration events can be failed or errored in the customer central tenant if the timezone is different in tenants.
+Login to customer central tenant
+Search for "Edit tenant setup - system" task (Not every have the access to this task)
+Change the timezone from the "Timezone configuration" tab
+Confirm the time and click ok	
+204.Private web services - Put Tenanted Report Definition 
+205.Private web service - Business process web service	
+
+
+Migration 
+1.Calculated field migreation sigle (Done)
+2.Calculated field migration within custom report
+3.Custom report without attaching integration
+4.Custom report with attaching Integration
+5.Integration (Done)
+
+
+Non Mandatory 
+3.then by refering to that cretae a studio with HTTPS data sending out
+4.Learn four studio component paged get, route, HTTP out, DIS, Object report service  (check INT0180A in HIG)
+5.learn PECI for the Davita
+
+
+Doubts
+1.How to make Integration which deletes unwanted fields from tenant.
+2.Learn postmen from Vishwa
+3.Play with JSON
+
+
+Notes
+1.If we use Validate expresssionthen we have to give handle downstreamm error to async (learn handle downstream error)
+ 
+
+How to validate the two employees ID is same in WD 
+1.Use DIS in report and then us eXSLT 3.0 Accumulator
+2.Merge report and Input file data with and then use XSLT 3.0 Accumulator
+3.Take the Input file employee iD In report prompt
+4.Use Hashmap
+5.Use getworker web service and then use cloud log
+6.use getworker web service with following parameter                 wd:Skip_Non_Existing_Instances="false"
+                wd:Ignore_Invalid_References="false">
+				
+
+Listener services
+1.We use listner service to launch the Integration outside workday
+
+
+
+
+Later cHeck on points
+1.Hartford INT0034 Check how to files can be picked from BPO service
+
+
+https://doc.workday.com/admin-guide/en-us/manage-workday/tenant-configuration/mobile-setup/mobile-security-and-authentication/dan1370797995981.html
+
+
+
+
+props['pSomePropertyNameWithAMap'] = new java.util.HashMap();
+props['pSomePropertyNameWithAMap'].put('promptXmlAliasNameofSimpleType', props['pSomePropertyNameWithValue']); props['pSomePropertyNameWithAMap'].put('promptXmlAliasNameOfReference!Reference_Type_ID', props['pSomePropertyNameWithAReferenceValue']); 
+
+props['FileName'] = vars['wd.retrieve.variable'].fileName
+props['Is.DL'] = props['FileName'].toString().contains('DL')
+
+
+Remove Header 
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    version="2.0">
+    <xsl:template match="root">
+        <root>
+            
+                
+            <xsl:copy-of select="*[position() != 1][position() != last()]"></xsl:copy-of>
+            
+        </root>
+    </xsl:template>
+</xsl:stylesheet>
+
+
+props['count'] = parts[0].xpath('count(row)')
+
+
+
+
+BIRT Training Start
+
+
+
+Interview question list 
+
+
+
+
+
+Current date time
+props['lp.current.run.datetime'] = java.time.LocalDateTime.now().toString()
+props['lp.current.run.date'] =  props['lp.current.run.datetime'].substring(0,10)
+
+
+Input file is empty (INT7047 GEV)
+parts[0].xpathB('/root/row/EmployeeID')
+Input File is empty or not found. 
+
+XML to CSV-
+
+
+da.size() > 0 - Input File is empty or not found.
+
+
+Into Validate expression
+
+
+One more way to merge Data - Copy Data Into Myltiple copy then use route with all batch then use aggregator to aggregate data
+
+Why we use Different audit 
+
+
+XSLT:
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:ns0="http://yourcompany.com/textschema/EHJ_TextSchemaTest/GE_Special_Pay.xsd"
+    exclude-result-prefixes="#all"
+    version="2.0">
+    
+    <xsl:template match="/">
+        <ns0:Input_File>
+            <xsl:apply-templates select="ns0:File"/>
+        </ns0:Input_File>
+    </xsl:template>
+    
+    <xsl:template match="ns0:File">
+        <xsl:for-each select="payInput">
+            <payInput>
+                <row><xsl:value-of select="position()"/></row>
+            <xsl:copy-of select="node()"/>
+            </payInput>
+        </xsl:for-each>           
+    </xsl:template>
+</xsl:stylesheet>
+
+What does the position() does
+
+
+Stroring file namespace
+
+keybank FINT3019 - props['p.filename'] = vars['vinput'].fileName
+
+Workspace - INT0059
+props['Pay.Period'] = lp.getReferenceDataList('Pay Period', 'WID') to get the WID from Launch Parameter
+
+What is the mean of this sentence
+
+props['c.Earning'] = intsys.getAttributeReferenceData('Earning', 'Earning_Code') - NT5247
+parts[0].xpathB("*/*") - No Detail records found for processing
+
+
+
+
+props['p.Input.Data']  = parts[0].xpathB('/root/row')
+
+
+Contaions
+
+
+Count
+props['Skipped.Count']=props['Skipped.Count']+1;
+props['Status']='Skipped';
+
+
+
+Connect Workday to Service no through API
+OAuth 2.0 and Service Now
+Hi General
+ 
+I'm looking to talk to somebody who has experience of using OAuth 2.0 to authenticate Service Now to Workday and for ServiceNow to retrieve data from a RaaS report.  
+ 
+The tech person on the client side says that he needs (along with the token and authorize URLs):
+Client ID
+Client Secret
+Redirect URL
+The Client id and redirect URL are on the "API Client" task but the Client Secret can not be found on this task
+The Client ID and client Secret are on the "API Client for Integrations" task but the Redirect URL is not on this task
+ 
+Is there any suggestions for which task to use so that Service Now can authenticate with Workday?
+ 
+sean the client secret is only found on task register api client for integration 
+ 
+that too while registering it for the first time
+ 
+I know this is weird but we have to create both "API Client" and "API Client for Integrations" as ServiceNow suggested https://www.servicenow.com/docs/bundle/xanadu-integrate-applications/page/administer/integrationhub-store-spokes/reference/configs-workday-hr-soap-oauth.html
+Product Documentation | ServiceNow
+
+
+
+Ideas
+1.When I work on the web service I usaully gets something like Calendar_Year_ID and I dont know where to find this so I want to cretae the solution that when i enter this workday automatically gives me the object of the trype,
+
+
+
+Add 365 days in date or minus 1 day in date
+props['begin.date'] = props['p.ee.effdt']
+props['days.to.add'] = 365
+props['old.date'] = props['date.formatter.exit'].parse(props['begin.date'])
+props['calendar'].setTime(props['old.date'])
+props['calendar'].add(java.util.Calendar.DAY_OF_MONTH, props['days.to.add'])
+props['p.ee.ELDleave+365'] = props['date.formatter.exit'].format(props['calendar'].getTime())
+
+
+
+
+
+Hello 
+General
+,
+ 
+One of my client has below requirement-
+Data will be fetched from WD via report and it will be send via json request to external API (I am using HTTP POST method in studio).
+They want this to run daily for full population.
+ 
+I am facing below issue:
+The report returns approx. 18,000 workers and when I try to accommodate these 18K workers in single JSON Request, it fails with error 'Sever Overloaded'. By reducing the record to 5,000 (added), it fails with error 'Size Exceed'. There might be a size limitation on the vendor's end but not sure what is the limit (I have asked them).
+ 
+Is there any other efficient approach to push the json?
+ 
+Another way I can think of - If there are 18K records, we can push the json request to API one at a time for each record. But with this approach there will be 18,000 connection attempts between Workday and Endpoint. Will this be an ideal approach to follow?
+
+With Full Population, population will increase day by day and i think you need to send the data in batches of number of records accepted by vendor API in one call... There will be multiple hits to vendor API so check how much time integration takes to send all 18K records.
+
+Hi Mrinal Manoj Manjarekar I worked on similar requirement earlier. I built code to send data in batches having 100 records in each. It worked without any issue. Vendor should confirm how many records they can accept in a batch. Based on their response, I suggest to use batch logic.
+ 
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bsvc="urn:com.workday/bsvc">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <bsvc:Get_Business_Process_Definitions_Request xmlns:wd="urn:com.workday/bsvc" bsvc:version="v43.0">
+      <bsvc:Request_Criteria>
+      <bsvc:Integration_System_Reference>
+       <bsvc:ID wd:type="Integration_System_ID">@{props['IntName']}</bsvc:ID>
+      </bsvc:Integration_System_Reference>
+      </bsvc:Request_Criteria>
+         <bsvc:Response_Filter>
+            <bsvc:Page>1</bsvc:Page>
+            <bsvc:Count>100</bsvc:Count>
+         </bsvc:Response_Filter>
+      </bsvc:Get_Business_Process_Definitions_Request>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Core_Implementation_Service
+
+It’s now possible to migrate X.509 Private Keys between your Implementation tenants through Customer Central.
+
+The new feature is for the migration of Private Key Pairs ONLY. If you try to migrate Public Key Pairs, the migration fails and the Public Key Pair won’t be migrated to your target tenant.
+
+You can run the Migrate x509 Private Key Pairs task to migrate x.509 key pairs between non-PROD tenants.  Refer to Workday Community <Migrate X.509 Private Key Pairs> article for more details. 

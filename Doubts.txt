@@ -1,0 +1,151 @@
+Doubts
+3.We will submit these for payroll via the MLT load process."
+4.Free up space of lapop from one drive
+5.ISU uses a different time zone
+6.diable account through ISU API call
+7.Picking multiple file from the studio
+8.Cloud log check for CSV and xlsx file
+9.How to generate csv file using normal audit log
+10.keys documentation
+11.learn xml to schema
+12.kearn textschema component 
+13.Make all Integration and HCM task list also includes Iready and Impact analysis
+14.JIRA learn
+15.Migrationlearn
+16 what to mainly check when their is message like no sloit gererated during development.
+17.How namespace work in studio and In assembly.
+18 build an Integration to take/update the data from greenhouse API into workday.(mostly do greehouse harvest API) / webhooks
+19. How to blacklist IP in tenant to login
+20.how many things I can migrate between two tenants like ISU, ISSG, Report.
+21.How to fetch the Xpath for <ws:Field name="Company Code" xdiff:isAdded="true">0612</ws:Field>
+22. Learn about CURL
+23. Inputing Data In workday through JAVA
+24. Inputing data in workday throygh POSTnam
+25. Inputing data In workday through greenhouse webhook
+26. How to take data from External system to workday
+27. How to seperate 
+28.create a report which will give me all the necessary security of the desired report.
+29.How to whitelist WD IP
+30.learn about view user activity task.
+31.why some securities are differenrt in different tenant, we have to give some additional securities to ISU
+32. Difference between Listner service and HTTPout (Look Zimit Integration for Refernce) 
+33. Creating HTTPS to send the outside the system
+34. Creating HTTPS to retrieve the Outside the system/ POSTman (Done)
+35. Call get_workers from postman (Done)
+36. get a single worker from WD In postman
+37. Get data from JIRA 
+38 How to do SSK configuration in studio.
+39.HTTP out work same as Web service call in Write or like web tester here we only additionally got refresh token and access token.  
+40.IDB migration
+41. shortcut to find the web service
+42. find the idea to create custom report report security
+5. Create a Report and see how looping of fields work in security in key 2 tenant
+6. why I am not able to assign newly created ISU to Custom report find out the reason
+7.     <xsl:template match="root/data/payload/application/candidate/phone_numbers/value"  >
+        <xsl:copy>
+            <xsl:value-of select="substring($Special_Number_Value, string-length($Special_Number_Value) - 9)" />
+        </xsl:copy>
+      /xsl:template>   
+	  
+	  I want a dynamic node element from root node.
+9. Excel Similar columns data filteration
+10. Text constant having all the employee ID's
+11. Can I sent output file from Report to MFT (No I cant send the output file of the report to the MFT, But there is Integration iN BMO which delivers the my drive file to MFT)
+12. Check 401K
+3. Write 10 new taks HCM/Integrations
+4. GEt tenanted private web service (Check Impact analsysis clar)
+5. Put Tenanted private web service
+6. Sent data from WD to Postman through Studio
+7.get data from dummy API to WD
+8.how to terminate employee and what is difference between termination date last day of the work pay through date
+last day of the work cannot be greater than termination work
+9.How to copy studio clar (Done)
+10.Work with payroll web service
+11.How to tranfer employee from One organization to other organization
+12.what is benefir service date
+13.How to call Integration attachment service in studio
+14.Look INT095 E
+15. inetgartion gets passes even if delivery gets failed 
+16.can we delete cal field
+17.How to end long running Integration event - Force failure
+18.How document deliverable actually work in studio and WD
+5.Start workday payroll - oncycle and offcycle concept
+6.Authentication - How to enter in client MFT with SSH key authentication.
+21.create my owun POV
+22.cobra template
+23.does refernce and WD iD changes of a workday delivered field if it gets migrated from one tenant to another tenant.
+24.How to migrate the data in two tenants through IDB.
+
+
+
+
+
+
+Next things
+1.PPD Implementors - doucmentation
+2.recurring ticket - INT015 Greenhouse Hire Studio Inbound - phone number parsing logic.
+3.keybank SOC Audit of INT0095PPA CR
+4.EMEA client - Task 
+5.key expiration
+6.SSK
+7.GL
+8.Migration
+
+
+components
+41.javascript - No need to learn 
+45.xml to javascript - No need to learn 
+46.java to xml - No need to learn 
+50.mtable builder - No need to learn 
+51.mtable writer - No need to learn 
+52.etv - No need to learn 
+53.xtt - No need to learn 
+55.geteventcinfigurations - No need to learn 
+60.PagedGetLocalPaging - No need to learn 
+61.PdfPrintStep - No need to learn 
+62.PrismAnalytics - No need to learn 
+64.SalesForceConnector - No need to learn 
+67.ftp-out - No need to learn 
+68.ftps-out - No need to learn 
+70.xmpp-out - No need to learn 
+
+Focus on HTTP Out and Route and pagedGet
+
+
+
+
+
+
+Tasks
+View configuration catalog content
+ 
+INT Studio StarterKit Collection
+
+public web services	
+
+
+
+
+Migration 
+1.Calculated field migreation sigle (Done)
+2.Calculated field migration within custom report
+3.Custom report without attaching integration
+4.Custom report with attaching Integration
+5.Integration (Done)
+
+
+Non Mandatory 
+3.then by refering to that cretae a studio with HTTPS data sending out
+4.Learn four studio component paged get, route, HTTP out, DIS, Object report service  (check INT0180A in HIG)
+5.learn PECI for the Davita
+
+
+Doubts
+
+1.How to make Integration which deletes unwanted fields from tenant.
+2.Learn postmen from Vishwa
+3.Play with JSON
+
+
+Creation
+1.create a Integration which will compare the Inbound file and Report report employees with XSLT 3.0
